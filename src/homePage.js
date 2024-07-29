@@ -17,7 +17,7 @@ const HomePage = () => {
     }
 
     useEffect(() => {
-        fetch("/leagues").then((res) => {
+        fetch("http://15.223.76.38:8080/leagues").then((res) => {
             return res.json();
         }).then((resp) => {
             setLeagueData(resp);
